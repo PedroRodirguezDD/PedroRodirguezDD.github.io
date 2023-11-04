@@ -1,0 +1,502 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*HEADER*/
+
+header{
+    height: 75px;
+    background-color: rgb(19, 49, 74);
+    display: flex;
+    justify-content: space-between;
+}
+
+header p{
+    color: rgb(106, 154, 227);
+    position: relative;
+    margin: 20px;
+    top: 10px;
+    right: 15px;
+}
+
+header img.logo-inicio {    
+    transform: scale(.7);
+}
+
+/*FOOTER*/
+/*FOOTER*/
+
+.subrayado {
+    width: 60%;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+    margin-top:5px;
+    margin-bottom: 15px;
+ }
+ 
+ footer{
+    background-color: rgb(19, 49, 74);
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ footer .primero{
+     margin: 20px;
+     display: flex;
+ }
+ 
+ footer .primero div{
+     margin: 20px;
+ }
+ 
+ footer .primero svg{
+     margin-right: 5px;
+ }
+ 
+ footer .primero h5{
+     margin-bottom: 0;
+ }
+ 
+ footer .primero ul{
+     list-style: none;
+     padding: 0;
+ }
+ 
+ 
+ /*segundo*/
+ 
+ footer .segundo{
+     text-align: center;
+ }
+ 
+ footer .segundo p:first-child {
+     width: 100%;
+     text-align: center;
+     color: rgba(255, 255, 255, 0.65);
+     font-size: 18px; 
+     margin:45px 0px 45px 0px;
+ }
+ 
+ footer .segundo p:last-child {
+     color: rgb(106, 154, 227);
+     margin-bottom: 5px;
+ }
+ 
+ /*tercero*/
+ 
+ footer .tercero{
+     width:23%;
+     margin: 10px;
+     margin-top: 30px;
+ }
+ 
+ footer .tercero img{
+     width: 180px;
+     position: relative;
+     left: 10px;
+     top: 10px;
+ }
+
+
+ footer .tercero p span{
+     color: rgba(255, 255, 255, 0.65);
+ }
+
+ footer .tercero p{
+    width: 90%;
+ }
+
+ 
+/**/
+
+
+.contenedor{
+    background-image: url("../img/fondo3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.contenedor > div{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.texto-bienvenida{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.texto-bienvenida h1,h2,p{
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+
+.form-inicio{
+    background-color: rgb(19, 49, 74);
+    height: 300px;
+    width: 300px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-inicio h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.logo-formulario{
+    width: 150px;
+    margin: 15px;
+}
+
+
+
+/*BOTONES*/
+
+.boton-primario, .boton-secundario{
+    height: 40px;
+    width: 200px;
+    border-radius: 23.5px;
+    border: none;
+    margin: 5px;
+}
+
+
+.boton-primario{
+    background-color: rgb(0, 121, 222);
+    margin-top: 30px;
+}
+.boton-primario a{
+    color: white;
+    text-decoration: none;
+}
+
+.boton-primario:hover{
+    background-color: rgb(0, 81, 150); 
+}
+
+.boton-secundario{
+    background-color: white;
+    color: rgb(0, 121, 222);
+}
+
+
+.boton-secundario a{
+    color: rgb(0, 121, 222);
+    text-decoration: none;
+}
+
+.boton-secundario svg path{ 
+    color: black;
+}
+
+.boton-secundario svg{
+    margin-right: 5px;
+}
+
+.boton-secundario:hover{
+    background-color: rgba(255, 255, 255, 0.651);
+}
+
+
+/*
+FORMULARIOS
+*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(19, 49, 74);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.formulario h2, .formulario p{
+    text-align: center;
+}
+
+.formulario h2{
+    margin-bottom: 20px;
+}
+
+.formulario input{
+    height: 32px;
+    width: 220px;
+    background-color: rgb(217, 217, 217);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    transition: .6s;
+    color: black;
+    padding-left: 3px;
+}
+
+.formulario input:focus{
+    background-color: rgb(173, 173, 173);
+    transform: scale(1.1);
+}
+
+.formulario-registro{
+    margin: 20px;
+    margin-top: 50px;
+    width:300px;
+    padding-bottom: 15px;
+    padding: 10px;
+}
+
+.formulario-registro img{
+    margin-bottom: 10px;
+}
+
+.formulario-registro div{
+    width: 75%;
+    height: 70px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+}
+
+.form-inicio-sesion{
+    width: 300px;
+}
+.form-inicio-sesion input{
+    width: 100%;
+}
+.form-inicio-sesion div{
+    width: 65%;
+}
+
+.volver-atras{
+    position: absolute;
+    left: 80px;
+    top: 130px;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: rgb(38, 71, 99);
+    font-size: 50px;
+}
+
+.volver-atras a{
+    position: relative;
+    bottom: 13px;
+    right: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/*BOTONES ANIMADOS*/
+
+
+
+.btn10{
+    height: 40px;
+    width: 200px;
+    margin:10px 4px;
+    color:white;
+    text-align: center;
+    position: relative;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    cursor: hand;
+    border: none;
+    border-radius:50px;
+   
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: rgb(0, 121,222);
+    z-index:1;   
+    cursor: pointer;
+}
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #6098FF;
+    display: block;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  }
+  
+  .btn:hover::before {
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+
+.btn10:hover{
+    border: 1px solid #071982;
+    color: #80f2ff!important;
+}
+.btn10::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #071982;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+     box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+
+.btn10::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+  -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn10:hover::before, .btn1O:hover::before{
+  opacity:1;
+  width: 116%;
+}
+.btn10:hover::after, .btn1O:hover::after{
+  opacity:1;
+  width: 120%;
+}
+
+.btn10 a{
+    color: white;
+    text-decoration: none;
+}
+
+/*SEGUNDO BOTON ANIMADO*/
+
+.glow-on-hover a{
+    text-decoration: none;
+}
+
+.glow-on-hover {
+    margin-top: 3px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: rgb(0, 121, 222);
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(9px);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    animation: glowing 10s linear infinite;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    border-radius: 30px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

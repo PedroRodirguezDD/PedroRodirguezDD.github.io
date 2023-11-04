@@ -1,0 +1,546 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.header-home{
+    position: relative;
+    height: 75px;
+    background-color: rgb(19, 49, 74);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburguesa{
+    color: white;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.hamburguesa:hover{
+    background-color: rgb(4, 28, 48);
+    border-radius: 5px;
+}
+
+.logo-home{
+    transform: scale(0.8);
+}
+
+.container{
+    background-color: rgb(29, 33, 37);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.container-home{
+    padding-top: 50px;
+}
+
+svg{
+    color: white;
+}
+
+div.menu-logo{
+    display: flex;
+}
+
+
+/*BARRA DE NAVEGACION*/
+
+.busqueda{
+    width: 30%;
+}
+
+.barra-navegacion{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(38, 71, 99);
+    border: none;
+    border-radius: 10px;
+    text-align: start;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    right: 70px;
+    font-size: 16px;
+}
+
+.lupa-busqueda{
+    color: gray;
+    position: absolute;
+    top: 45%;
+    left: 63%;
+    transform: scale(1.2);
+}
+
+
+/*CARRITO Y USER*/
+
+.carrito-usuario{
+    margin-top: 30px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.carrito-usuario svg {
+    transform: scale(2);
+    margin-right:40PX;
+}
+
+
+
+/*FOOTER*/
+
+.subrayado {
+    width: 60%;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+    margin-top:5px;
+    margin-bottom: 15px;
+ }
+ 
+ footer{
+    background-color: rgb(19, 49, 74);
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ footer .primero{
+     margin: 20px;
+     display: flex;
+ }
+ 
+ footer .primero div{
+     margin: 20px;
+ }
+ 
+ footer .primero svg{
+     margin-right: 5px;
+ }
+ 
+ footer .primero h5{
+     margin-bottom: 0;
+ }
+ 
+ footer .primero ul{
+     list-style: none;
+     padding: 0;
+ }
+ 
+ 
+ /*segundo*/
+ 
+ footer .segundo{
+     text-align: center;
+ }
+ 
+ footer .segundo p:first-child {
+     width: 100%;
+     text-align: center;
+     color: rgba(255, 255, 255, 0.65);
+     font-size: 18px; 
+     margin:45px 0px 45px 0px;
+ }
+ 
+ footer .segundo p:last-child {
+     color: rgb(106, 154, 227);
+     margin-bottom: 5px;
+ }
+ 
+ /*tercero*/
+ 
+ footer .tercero{
+    width:23%;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+footer .tercero img{
+    width: 180px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+
+footer .tercero p span{
+    color: rgba(255, 255, 255, 0.65);
+}
+
+footer .tercero p{
+   width: 90%;
+}
+ 
+
+
+ /*MENU DESPLEGABLE*/
+
+.menu{
+    list-style: none;
+    background-color: rgb(4, 28, 48);
+    padding: 1% 2% 2% 2%;
+    width: 8%;
+    border-radius: 3px;
+    position: absolute;
+    left: 1%;
+    display: none;
+    z-index: 2;
+}
+
+/*VISIBLE*/
+.visible{
+    display: block;
+}
+
+.menu hr{
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.menu li{
+    margin: 5%;
+    padding-left: 10%;
+} 
+
+.menu li:hover{
+    text-decoration: underline;
+} 
+
+.cruz-menu{
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+    transform: scale(1.3);
+    border: 1px solid white;
+}
+
+
+/*CARRITO DESPLEGABLE*/
+
+
+.bi-cart2,.bi-person-circle{
+    cursor: pointer;
+}
+
+.bi-cart2:hover{
+    background-color: rgb(4, 28, 48);
+    border-radius: 30%;
+}
+
+.carrito{
+    position: absolute;
+    background-color: rgb(4, 28, 48); 
+    width: 20%;
+    right: 5%;
+    padding: 1%;
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
+
+.carrito hr{
+    width: 45%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.carrito h3{
+    margin-bottom: 2%;
+}
+
+.juegos-carrito{
+    display: flex;
+}
+
+.juegos-carrito div{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+
+.juegos-carrito img{
+    width: 25%;
+    border-radius: 5px;
+    margin-right: 5%;
+}
+
+.juegos-carrito div:last-child p{
+    margin-right: 15px;
+}
+
+hr.separador {
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+
+.precio-carrito{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+}
+
+.total {
+    font-size: 18px;
+}
+
+.cruz-carrito{
+    cursor: pointer;
+    position: relative;
+    left: 45%;
+    transform: scale(1.3);
+    border: 1px solid white;
+}
+
+.carrito-visible{
+    display: block;
+}
+
+.carrito button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 180px;
+    background-color:rgb(0, 121, 222);
+    cursor: pointer;
+}
+
+.carrito button:hover{
+    background-color: rgb(0, 81, 150);
+}
+
+
+/*USER DESPLEGABLE*/
+
+.perfil{
+    width: 15%;
+    background-color: rgb(4, 28, 48);
+    padding: 0% 1% 1% 1%;
+    border-radius: 3px;
+    position: absolute;
+    right: 2%;
+    display: none;
+    z-index: 2;
+}
+
+.perfil div{
+    text-align: center;
+    margin: 5% 5% 15%5%;
+}
+
+.perfil div p{
+    color: rgba(255, 255, 255, 0.578);
+}
+
+.perfil div img{
+    width: 25%;
+    height: 48px;
+    border-radius: 100%;
+}
+
+.perfil p{
+    margin: 3.5%;
+}
+
+.perfil p a{
+    text-decoration: none;
+}
+
+.perfil p:hover, a:hover{
+    text-decoration: underline;
+}
+
+.perfil hr{
+    width: 60%;
+}
+
+.cruz-user{
+    position: relative;
+    left: 90%;
+    cursor: pointer;
+    transform: scale(1.3);
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+.user-visible{
+    display: block;
+}
+
+.bi-person-circle:hover{
+    background-color: rgb(4, 28, 48);
+    border-radius: 100%;
+}
+
+
+
+
+
+
+  /*PRELOADER PARA HOME*/
+
+  
+
+  .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.progress-bar {
+    position: absolute;
+    width: 30%;
+    height: 20px;
+    background-color: #ccc;
+    bottom: 40%;
+    border-radius: 30px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.1s ease-in-out;
+    border-radius: 30px;
+}
+
+.percentage {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+}
+  
+
+
+
+/*RESPONSIVE: DISEÑO MOBILE*/
+
+@media(max-width:400px){
+
+
+/*HEADER*/
+    
+    /*menu hamburguesa y logo*/
+    .menu-logo{
+        width: 30%;
+    }
+
+    .hamburguesa{
+        position: absolute;
+        margin: 0;
+        transform: scale(.9);
+        left: 2%;
+    }
+
+    .logo-home{
+        transform: scale(0.6);
+        margin: 0;
+    }
+
+        /*menu desplegable*/
+        .menu{
+            width: 35%;
+        }
+
+        .cruz-menu{
+            left: 85%;
+            top: 10px;
+            transform: scale(1.1);
+        }
+
+
+    /*barra de navegacion*/
+    .busqueda{
+        display: none;
+    }
+
+
+    /*carrito y perfil*/
+    .carrito-usuario{
+        width: 30%;
+        align-items: baseline;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .carrito-usuario svg{
+        margin-right: 5%;
+        margin-left: 15%;
+        transform: scale(1.7);
+    }
+
+        /*carrito desplegable*/
+        .carrito{
+            width: 60%;
+            right: 8%;
+        }
+
+        .cruz-carrito{
+            left: 40%;
+            top: 8px;
+        }
+
+        /*perfil desplegable*/
+        .perfil{
+            width: 55%;
+        }
+
+        .cruz-user{
+            left: 86%; 
+            transform: scale(1.3);
+        }
+
+/*FOOTER*/
+    .footer{
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 5%;
+    }
+
+    .footer .tercero{
+        display: none;
+    }
+
+}
